@@ -1,0 +1,38 @@
+import React from 'react'
+import {Route,Link} from 'react-router-dom'
+
+import {Layout,Menu,LocaleProvider} from 'antd'
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
+
+import Employee from './employee';
+//import Setting from './setting';
+
+const {Header,Content,Footer} = Layout;
+
+const App = () => (
+    <LocaleProvider>
+      <Layout>
+        <Header>
+            <Menu
+                theme="dark"
+                mode="horizontal"
+                defaultOpenKeys={['employed']}
+                className="menu"
+            >
+                <Menu.Item key="employee">员工管理</Menu.Item>
+                <Menu.Item key="setting">系统设置</Menu.Item>
+            </Menu>
+        </Header>
+        <Content className="contentWarp">
+            <div className="content">
+                <Employee />
+                {/** <Setting>*/}
+            </div>
+        </Content>
+        <Footer className = "footer">Ts in manage</Footer>
+      </Layout>
+    </LocaleProvider>
+)
+
+
+export default App
