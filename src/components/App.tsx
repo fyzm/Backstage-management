@@ -1,16 +1,18 @@
 import React from 'react'
-import {Route,Link} from 'react-router-dom'
+//import {Route,Link} from 'react-router-dom'
 
-import {Layout,Menu,LocaleProvider} from 'antd'
-import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import {Layout,Menu,ConfigProvider} from 'antd'
+//import zh_CN from 'antd/lib/locale-provider/zh_CN';
 
 import Employee from './employee';
 //import Setting from './setting';
 
+import './App.css'
+
 const {Header,Content,Footer} = Layout;
 
 const App = () => (
-    <LocaleProvider>
+    <ConfigProvider>
       <Layout>
         <Header>
             <Menu
@@ -31,7 +33,7 @@ const App = () => (
         </Content>
         <Footer className = "footer">Ts in manage</Footer>
       </Layout>
-    </LocaleProvider>
+    </ConfigProvider>
 )
 
 
