@@ -1,6 +1,6 @@
 import React from 'react'
 import {Layout,Menu,ConfigProvider} from 'antd'
-//import zh_CN from 'antd/lib/locale-provider/zh_CN';
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
 
 import Employee from './employee';
 //import Setting from './setting';
@@ -10,7 +10,7 @@ import './App.css'
 const {Header,Content,Footer} = Layout;
 
 const App = () => (
-    <ConfigProvider>
+    <ConfigProvider locale={zh_CN}>
       <Layout>
         <Header>
             <Menu
