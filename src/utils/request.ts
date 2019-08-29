@@ -4,7 +4,7 @@ import { message } from 'antd'
 
 
 const axios = originAxios.create({
-    timeout: 2000
+    timeout: 20000
 })
 
 axios.interceptors.response.use(
