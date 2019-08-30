@@ -5,10 +5,10 @@ import './index.css';
 
 const Setting = () => {
     return (
-        <>
-            <Checkbox></Checkbox>
+        <>           
+            <Checkbox>new Employee Working</Checkbox>
             <div className="buttonWrap">
-                <Button type="primary">保存</Button>
+                <Button type="primary">Save</Button>
             </div>
         </>
     )

@@ -32,7 +32,7 @@ class Employee extends Component<{},State> {
     render() {
         return (
             <>
-                <QueryForm  onDateChange={this.setEmployee}/>
+                <QueryForm  onDataChange={this.setEmployee}/>
                 {this.getTotal()}
                 <Table columns={employeeColumns}  dataSource = {this.state.employee} className="table" />
             </>
